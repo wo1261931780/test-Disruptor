@@ -17,6 +17,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 获取实例化对象
+ *
  * @author 64234
  */
 @Component
@@ -29,7 +30,9 @@ public class BeanManager implements ApplicationContextAware {
 		this.applicationContext = applicationContext;
 	}
 
-	public static ApplicationContext getApplicationContext() { return applicationContext; }
+	public static ApplicationContext getApplicationContext() {
+		return applicationContext;
+	}
 
 	public static Object getBean(String name) {
 		return applicationContext.getBean(name);

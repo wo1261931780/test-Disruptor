@@ -13,5 +13,8 @@ import lombok.Data;
  */
 @Data
 public class MessageModel {
+	/**
+	 * 消息
+	 */
 	private String message;
 }

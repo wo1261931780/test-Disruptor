@@ -15,6 +15,12 @@ import wo1261931780.testDisruptor.model.MessageModel;
  */
 @Slf4j
 public class HelloEventHandler implements EventHandler<MessageModel> {
+	/**
+	 * 消费者处理消息
+	 * @param event 消息对象
+	 * @param sequence 序号
+	 * @param endOfBatch 是否是最后一个元素
+	 */
 	@Override
 	public void onEvent(MessageModel event, long sequence, boolean endOfBatch) {
 		try {

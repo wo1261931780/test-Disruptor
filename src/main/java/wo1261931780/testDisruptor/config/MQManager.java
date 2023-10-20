@@ -23,7 +23,10 @@ import java.util.concurrent.Executors;
  */
 @Configuration
 public class MQManager {
-
+	/**
+	 * 定义ringbuffer
+	 * @return ringbuffer
+	 */
 	@Bean("messageModel")
 	public RingBuffer<MessageModel> messageModelRingBuffer() {
 		//定义用于事件处理的线程池， Disruptor通过java.util.concurrent.ExecutorSerivce提供的线程来触发consumer的事件处理

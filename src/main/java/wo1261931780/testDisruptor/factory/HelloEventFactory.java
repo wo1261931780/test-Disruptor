@@ -13,6 +13,10 @@ import wo1261931780.testDisruptor.model.MessageModel;
  * @Description
  */
 public class HelloEventFactory implements EventFactory<MessageModel> {
+	/**
+	 * 创建一个空的消息对象
+	 * @return 空的消息对象
+	 */
 	@Override
 	public MessageModel newInstance() {
 		return new MessageModel();
